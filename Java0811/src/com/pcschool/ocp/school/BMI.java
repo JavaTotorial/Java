@@ -1,11 +1,11 @@
 package com.pcschool.ocp.school;
 
 public class BMI {
-	private int height;
+	private double height;
 	private double weight;
 	private double bmi;
 	
-	public BMI(int height, double weight) {
+	public BMI(double height, double weight) {
 		this.height = height;
 		this.weight = weight;
 		setBmi();
@@ -15,9 +15,9 @@ public class BMI {
 		return bmi;
 	}
 	private void setBmi() {
-		bmi = weight / Math.pow(height/100, 2);
+		bmi = Double.parseDouble(String.format("%.2f", weight / Math.pow(height/100, 2)));
 	}
-	public int getHeight() {
+	public double getHeight() {
 		return height;
 	}
 	public double getWeight() {
@@ -27,7 +27,7 @@ public class BMI {
 	@Override
 	
 	public String toString() {
-		return ", height=" + height + ", weight=" + weight + ", bmi=" + bmi + "]";
+		return ", height=" + height + ", weight=" + weight + ", bmi=" + bmi;
 	}
 
 	

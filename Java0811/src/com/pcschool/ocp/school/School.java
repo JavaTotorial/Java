@@ -12,18 +12,18 @@ public class School {
 		String[] datas = new Scanner(file).useDelimiter("/A").next().split("\r\n");
 		ArrayList<Student> students = new ArrayList<Student>();
 		String[] d;
-		
-		for(String data : datas) {
+
+		for (String data : datas) {
 			d = data.split(",");
 			students.add(new Student(d[0], Integer.parseInt(d[1]), Integer.parseInt(d[2]), Double.parseDouble(d[3])));
 		}
-		
+
 		Collections.sort(students);
 
 		students.stream().forEach(student -> System.out.println(student));
 		System.out.println("\n");
 
-		Collections.sort(students, (o1, o2) -> (int)(o1.getBmi() - o2.getBmi()));
+		Collections.sort(students, (o1, o2) -> (int) (o1.getBmi() - o2.getBmi()));
 
 		students.stream().forEach(student -> System.out.println(student));
 	}
