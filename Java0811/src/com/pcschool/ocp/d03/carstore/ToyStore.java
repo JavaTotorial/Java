@@ -8,5 +8,6 @@ public class ToyStore {
 		toyCar.wheel = new Wheel();
 		toyCar.tires = new Tire[] {new Tire(), new Tire(), new Tire(), new Tire()};
 		
+		System.out.println(toyCar.getPrice());
 	}
 }
