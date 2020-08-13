@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class School {
@@ -19,12 +20,13 @@ public class School {
 		}
 
 		Collections.sort(students, (o1, o2) -> o1.getAge() - o2.getAge());
-
+		
 		students.stream().forEach(student -> System.out.println(student));
-		System.out.println("\n");
+		System.out.println("==================================================================");
 
-		Collections.sort(students, (o1, o2) -> (int) (o1.getBmi() - o2.getBmi()));
-
+		Collections.sort(students, (o1, o2) -> (int)Math.ceil(o1.getBmi() - o2.getBmi()));
+//		Collections.sort(students, (o1, o2) -> (int)Math.ceil(o2.getBmi() - o1.getBmi()));
+		
 		students.stream().forEach(student -> System.out.println(student));
 	}
 }
