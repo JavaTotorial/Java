@@ -14,6 +14,13 @@ public class ArithmeticMethod2 {
 		// Java
 		Arrays.stream(scores).forEach(score -> System.out.print(score + " "));
 		System.out.println();
-
+		
+		// 排序
+		Arrays.stream(scores).sorted().forEach(score -> System.out.print(score + " "));
+		System.out.println();
+		
+		// 過濾
+		Arrays.stream(scores).sorted().filter(score -> score >= 60).forEach(sc -> System.out.print(sc + " "));
+		System.out.println();
 	}
 }
