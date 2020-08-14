@@ -12,10 +12,15 @@ class Dog extends Animal {
 		super(legs);
 		System.out.println("執行   Dog 建構子");
 	}
+	public Dog() {
+		this(4);
+		System.out.println("執行   Dog 建構子");
+	}
 }
 
 public class Zoo {
 	public static void main(String[] args) {
 		Dog dog = new Dog(4);
+		Dog dog2 = new Dog();
 	}
 }
