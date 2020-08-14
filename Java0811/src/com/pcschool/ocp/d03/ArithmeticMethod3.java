@@ -1,6 +1,7 @@
 package com.pcschool.ocp.d03;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class ArithmeticMethod3 {
 	public static void main(String[] args) {
@@ -8,7 +9,13 @@ public class ArithmeticMethod3 {
 
 		// Java 8
 		Arrays.stream(bmis).forEach(bmi -> System.out.println(bmi));
-
+		System.out.println("================================");
+		
+		Arrays.stream(bmis).filter(bmi -> bmi.getBmi() >= 18 && bmi.getBmi() <= 23).forEach(b -> System.out.println(b));
+		System.out.println("================================");
+		
+		Arrays.stream(bmis).sorted(Comparator.comparing(BMI::getBmi)).filter(bmi -> bmi.getBmi() >= 18 && bmi.getBmi() <= 23).forEach(b -> System.out.println(b));
+		System.out.println("================================");
 	}
 }
 
