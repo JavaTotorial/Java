@@ -10,7 +10,6 @@ public class ArithmeticMethod4 {
 			.filter(s -> s.getScore() >= 60)
 			.sorted(Comparator.comparing(Exam::getScore))
 			.forEach(e -> System.out.println(e));
-		System.out.println("\u001b[32mA");
 	}
 }
 
