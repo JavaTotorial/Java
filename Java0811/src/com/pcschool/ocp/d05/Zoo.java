@@ -10,11 +10,11 @@ class Animal {
 class Dog extends Animal {
 	public Dog(int legs) {
 		super(legs);
-		System.out.println("執行   Dog 建構子");
+		System.out.println("執行　Dog 建構子");
 	}
 	public Dog() {
 		this(4);
-		System.out.println("執行   Dog 建構子");
+		System.out.println("執行　Dog 建構子");
 	}
 }
 
