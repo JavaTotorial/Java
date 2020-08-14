@@ -10,5 +10,6 @@ public class Car {
 	
 	public static void printCar2() {
 		System.out.println(brand);
+		System.out.println(new Car().typeName);
 	}
 }
