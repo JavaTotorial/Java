@@ -1,0 +1,17 @@
+package com.pcschool.ocp.d05;
+
+import com.pcschool.ocp.d05.foo.*;
+
+public class Family {
+	public static void main(String[] args) {
+		Son son = new Son();
+		System.out.println(son.money);
+		son.play();
+		
+		Son2 son2 = new Son2();
+		son2.print();
+		
+		Son3 son3 = new Son3();
+		son3.print();
+	}
+}
