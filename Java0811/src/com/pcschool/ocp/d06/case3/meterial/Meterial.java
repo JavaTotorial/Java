@@ -1,9 +1,8 @@
 package com.pcschool.ocp.d06.case3.meterial;
 
 public class Meterial {
- 
+
 	private String name;
-	 
 	private int price;
 
 	public String getName() {
@@ -21,6 +20,4 @@ public class Meterial {
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	 
-} 
- 
+}
