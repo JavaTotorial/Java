@@ -7,7 +7,7 @@ public class DrinkStore {
 		PearlTea pearlTea = new PearlTea();
 		System.out.println(pearlTea.getPrice());
 		
-		GreenPearlMilk greenPearlMilk = new GreenPearlMilk();
+		GreenPearlTea greenPearlMilk = new GreenPearlTea();
 		System.out.println(greenPearlMilk.getPrice());
 	}
 }
