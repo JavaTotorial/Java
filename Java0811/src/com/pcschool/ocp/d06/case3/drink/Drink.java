@@ -18,6 +18,10 @@ public class Drink {
 		Arrays.stream(meterial).forEach(m -> meterials.add(m));
 	}
 
+	public ArrayList<Meterial> getMeterials() {
+		return meterials;
+	}
+
 	public int getPrice() {
 		return meterials.stream().mapToInt(meterial -> meterial.getPrice()).sum();
 	}

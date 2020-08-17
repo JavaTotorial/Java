@@ -9,6 +9,12 @@ public class DrinkStore {
 		
 		GreenPearlTea greenPearlMilk = new GreenPearlTea();
 		System.out.println(greenPearlMilk.getPrice());
-		System.out.println("成分: " + greenPearlMilk);
+		
+		System.out.print("成分: ");
+		greenPearlMilk.getMeterials().stream().forEach(meterial -> System.out.print(meterial.getName() + " "));
+		System.out.println();
+		
+		greenPearlMilk.getMeterials().stream()
+								.forEach(meterial -> System.out.println(meterial.getName() + ": $" + meterial.getPrice()));
 	}
 }
