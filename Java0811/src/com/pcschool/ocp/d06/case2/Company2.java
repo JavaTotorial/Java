@@ -33,14 +33,14 @@ public class Company2 {
 		int sum_all = 0;
 		for(Employee emp : employees)
 			sum_all += emp.getSalary().getMoney();
-		System.out.printf("總薪資成本: %d\n", sum_all);
+		System.out.printf("Java7 總薪資成本: %d\n", sum_all);
 		
 		// Sales 總薪資成本 = ? 
 		int sum_sales = 0;
 		for(Employee emp : employees)
 			if(emp instanceof Sales)
 				sum_sales += emp.getSalary().getMoney();
-		System.out.printf("Sales總薪資成本: %d\n", sum_sales);
+		System.out.printf("Java7 Sales總薪資成本: %d\n", sum_sales);
 	
 	
 		// Java8
@@ -51,13 +51,21 @@ public class Company2 {
 		int sum_all_java8 = Arrays.stream(employees)
 							.mapToInt(emp -> emp.getSalary().getMoney())
 							.sum();
-		System.out.printf("總薪資成本: %d\n", sum_all_java8);
+		System.out.printf("Java8 總薪資成本: %d\n", sum_all_java8);
 		
 		// Sales 總薪資成本 = ? 
 		int sum_sales_java8 = Arrays.stream(employees)
 									.filter(employee -> employee instanceof Sales)
 									.mapToInt(emp -> emp.getSalary().getMoney())
 									.sum();
-		System.out.printf("Sales總薪資成本: %d\n", sum_sales_java8);
+		System.out.printf("Java8 Sales總薪資成本: %d\n", sum_sales_java8);
+	
+		// Manager 總薪資成本 = ? 
+		int sum_manager_java8 = Arrays.stream(employees)
+									.filter(employee -> employee instanceof Manager)
+									.filter(emp -> !(emp instanceof Supervistor))
+									.mapToInt(emp -> emp.getSalary().getMoney())
+									.sum();
+		System.out.printf("java8 Manager總薪資成本: %d\n", sum_manager_java8);
 	}
 }
