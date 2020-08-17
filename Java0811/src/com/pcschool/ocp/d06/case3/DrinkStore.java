@@ -9,5 +9,6 @@ public class DrinkStore {
 		
 		GreenPearlTea greenPearlMilk = new GreenPearlTea();
 		System.out.println(greenPearlMilk.getPrice());
+		System.out.println("成分: " + greenPearlMilk);
 	}
 }

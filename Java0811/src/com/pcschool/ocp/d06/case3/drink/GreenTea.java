@@ -4,6 +4,6 @@ import com.pcschool.ocp.d06.case3.meterial.Tea;
 
 public class GreenTea extends Drink{
 	public GreenTea() {
-		addMeterial(new Tea("綠茶", 20));
+		addMeterial(new Tea("綠茶", 25));
 	}
 }
