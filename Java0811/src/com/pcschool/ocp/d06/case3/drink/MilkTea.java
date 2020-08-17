@@ -1,5 +1,10 @@
 package com.pcschool.ocp.d06.case3.drink;
 
-public class MilkTea extends Drink {
+import com.pcschool.ocp.d06.case3.meterial.Milk;
+import com.pcschool.ocp.d06.case3.meterial.Tea;
 
+public class MilkTea extends Drink {
+	public MilkTea() {
+		addMeterial(new Milk(), new Tea());
+	}
 }

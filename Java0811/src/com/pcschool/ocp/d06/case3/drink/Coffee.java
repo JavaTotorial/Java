@@ -1,5 +1,10 @@
 package com.pcschool.ocp.d06.case3.drink;
 
-public class Coffee extends Drink {
+import com.pcschool.ocp.d06.case3.meterial.Bean;
+import com.pcschool.ocp.d06.case3.meterial.Milk;
 
+public class Coffee extends Drink {
+	public Coffee() {
+		addMeterial(new Bean(), new Milk());
+	}
 }
