@@ -14,18 +14,18 @@ public class Pearl extends Meterial {
 		setPrice();
 	}
 
+	public void setPrice() {
+		if (size.equalsIgnoreCase("L"))
+			setPrice(40);
+		else
+			setPrice(20);
+	}
+
 	public String getSize() {
 		return size;
 	}
 
 	public void setSize(String size) {
 		this.size = size;
-	}
-
-	public void setPrice() {
-		if (size.equalsIgnoreCase("L"))
-			setPrice(40);
-		else
-			setPrice(20);
 	}
 }
