@@ -6,5 +6,6 @@ public class Company {
 		System.out.println(emp.getSalary());
 		Manager manager = new Manager();
 		System.out.println(manager.getSalary());
+		manager.setSalary(50000);
 	}
 }
