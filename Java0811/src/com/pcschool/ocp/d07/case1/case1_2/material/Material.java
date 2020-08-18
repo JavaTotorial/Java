@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d07.case1_2.material;
+package com.pcschool.ocp.d07.case1.case1_2.material;
 
 public class Material {
     private String name;

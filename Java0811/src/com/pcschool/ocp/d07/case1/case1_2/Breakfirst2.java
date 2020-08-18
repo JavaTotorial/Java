@@ -1,10 +1,10 @@
-package com.pcschool.ocp.d07.case1_2;
+package com.pcschool.ocp.d07.case1.case1_2;
 
 import java.util.Arrays;
 
-import com.pcschool.ocp.d07.case1_2.food.Food;
-import com.pcschool.ocp.d07.case1_2.food.Sandwich;
-import com.pcschool.ocp.d07.case1_2.food.Hamburger;
+import com.pcschool.ocp.d07.case1.case1_2.food.Food;
+import com.pcschool.ocp.d07.case1.case1_2.food.Hamburger;
+import com.pcschool.ocp.d07.case1.case1_2.food.Sandwich;
 
 public class Breakfirst2 {
 	public static void main(String[] args) {

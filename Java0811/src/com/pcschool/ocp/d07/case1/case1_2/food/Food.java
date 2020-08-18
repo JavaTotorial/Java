@@ -1,7 +1,8 @@
-package com.pcschool.ocp.d07.case1_2.food;
+package com.pcschool.ocp.d07.case1.case1_2.food;
 
-import com.pcschool.ocp.d07.case1_2.material.Material;
 import java.util.Arrays;
+
+import com.pcschool.ocp.d07.case1.case1_2.material.Material;
 
 public class Food {
 
