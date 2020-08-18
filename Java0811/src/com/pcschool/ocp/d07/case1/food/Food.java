@@ -18,13 +18,28 @@ public class Food {
 		this();
 		setName(name);
 	}
-
-	public void addMeterials(Material... materials) {
+	
+	/*****************
+	 * init material *
+	 *****************/
+	public void addMaterials(Material... materials) {
 		Arrays.stream(materials).forEach(this.materials::add);
 	}
-
+	
+	/********************
+	 * add new material *
+	 ********************/
+	public void addMaterial(Material material) {
+		materials.add(material);
+		addName(material);
+	}
+	
 	public int getPrice() {
 		return materials.stream().mapToInt(Material::getPrice).sum();
+	}
+
+	private void addName(Material material) {
+		name = name.concat(" + " + material.getName());
 	}
 
 	public void setName(String name) {
@@ -38,5 +53,4 @@ public class Food {
 	public ArrayList<Material> getMaterials() {
 		return materials;
 	}
-
 }
