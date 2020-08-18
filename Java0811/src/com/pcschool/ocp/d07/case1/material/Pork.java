@@ -1,9 +1,13 @@
 package com.pcschool.ocp.d07.case1.material;
 
 public class Pork extends Material {
+
 	public Pork() {
-		setName("豬肉");
-		setPrice(25);
+		this("豬肉", 25);
 	}
+
+	public Pork(String name, int price) {
+		super(name, price);
+	}
+
 }
- 

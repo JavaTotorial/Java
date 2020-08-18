@@ -9,4 +9,3 @@ public class Hamburger extends Food {
 		addMeterials(new Beef(), new Egg());
 	}
 }
- 

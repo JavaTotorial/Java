@@ -9,4 +9,3 @@ public class Sandwich extends Food {
 		addMeterials(new Ham(), new Egg());
 	}
 }
- 
