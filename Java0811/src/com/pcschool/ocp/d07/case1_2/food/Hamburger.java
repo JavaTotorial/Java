@@ -1,8 +1,8 @@
 package com.pcschool.ocp.d07.case1_2.food;
 
-import com.pcschool.ocp.d07.case1.material.Beef;
-import com.pcschool.ocp.d07.case1.material.Egg;
-import com.pcschool.ocp.d07.case1.material.Material;
+import com.pcschool.ocp.d07.case1_2.material.Beef;
+import com.pcschool.ocp.d07.case1_2.material.Egg;
+import com.pcschool.ocp.d07.case1_2.material.Material;
 
 public class Hamburger extends Food {
 
