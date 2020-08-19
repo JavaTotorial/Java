@@ -1,6 +1,7 @@
 package com.pcschool.ocp.d08;
 
 public class Ball {
+
 	private String color;
 	private int price;
 
@@ -8,22 +9,33 @@ public class Ball {
 		this.color = color;
 		this.price = price;
 	}
-
+	
 	@Override
 	public int hashCode() {
-		return 7;
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((color == null) ? 0 : color.hashCode());
+		result = prime * result + price;
+		return result;
 	}
 
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
 			return true;
-		if (!(obj instanceof Ball))
+		if (obj == null)
 			return false;
-		Ball o = (Ball) obj;
-		if (price == o.price & color.equals(o.color))
-			return true;
-		return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Ball other = (Ball) obj;
+		if (color == null) {
+			if (other.color != null)
+				return false;
+		} else if (!color.equals(other.color))
+			return false;
+		if (price != other.price)
+			return false;
+		return true;
 	}
 
 	public String getColor() {
