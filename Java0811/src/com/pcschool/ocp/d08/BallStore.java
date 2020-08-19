@@ -13,6 +13,5 @@ public class BallStore {
 		
 		System.out.println(b1.hashCode());
 		System.out.println(b2.hashCode());
-		
 	}
 }
