@@ -2,13 +2,13 @@ package com.pcschool.ocp.d08.case4;
 
 public abstract class Person {
 
-	private int age;
 	private String name;
+	private int age;
 	private double bmi;
 
 	
 
-	public Person(int age, String name, double bmi) {
+	public Person(String name, int age, double bmi) {
 		this.age = age;
 		this.name = name;
 		this.bmi = bmi;
