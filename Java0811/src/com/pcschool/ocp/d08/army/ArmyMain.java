@@ -12,7 +12,7 @@ public class ArmyMain {
 
 		// cars 要統一發射武器
 		Arrays.stream(cars).filter(car -> car instanceof Weapon).map(c -> (Weapon) c).forEach(Weapon::shoot);
-
+		
 		// weapons 要統一發射武器
 		Arrays.stream(weapons).forEach(Weapon::shoot);
 
