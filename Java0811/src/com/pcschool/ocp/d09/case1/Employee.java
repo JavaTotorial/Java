@@ -10,7 +10,7 @@ public class Employee {
 		public void program() {
 			String name = "寫程式";
 			System.out.println(name + ": " + this.name);
-			
+
 			Study study = new Study();
 			study.read();
 		}
@@ -27,14 +27,14 @@ public class Employee {
 			String appName = "美食 App";
 
 			System.out.println("進修時間: " + hours + " H");
-			
+
 			// 方法內部類別不可有存取修飾子
 			class App {
 				public void printName() {
 					System.out.println(appName); // 取用 final 變數
 				}
 			}
-			
+
 			App app = new App();
 			app.printName();
 		}
