@@ -25,7 +25,7 @@ public class FlatMap {
 		System.out.println("Java 8 flatmap: " + sum);
 
 		/*******************************************
-		 * flatmap: 將 2 維陣 stream 轉為 1 維的 stream *
+		 * flatmap: 將 n 維陣 stream 轉為 n-1 維的 stream *
 		 *******************************************/
 	}
 }
