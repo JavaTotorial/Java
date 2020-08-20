@@ -7,9 +7,5 @@ public class Company {
 		
 		job.program();
 		job.meating();
-		
-		Employee.Study study = emp.new Study();
-		
-		study.read();
 	}
 }
