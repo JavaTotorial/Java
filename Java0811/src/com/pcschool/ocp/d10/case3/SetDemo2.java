@@ -15,15 +15,24 @@ public class SetDemo2 {
 		set.add("數學");
 		set.add(90);
 		System.out.println(set.toString());
-		
+
+		// Java 7
 		Iterator iter = set.iterator();
 		int sum = 0;
-		while(iter.hasNext()) {
-			Object data = iter.next();
+		Object data;
+		while (iter.hasNext()) {
+			data = iter.next();
 			System.out.print(data + " ");
-			if(data instanceof Integer)
-				sum += (int)data;
+			if (data instanceof Integer)
+				sum += (int) data;
 		}
 		System.out.println("\n" + sum);
+
+		// Java 8
+		sum = set.parallelStream()
+				.filter(o -> o instanceof Integer)
+				.mapToInt(e -> (int)e)
+				.sum();
+		System.out.println(sum);
 	}
 }
