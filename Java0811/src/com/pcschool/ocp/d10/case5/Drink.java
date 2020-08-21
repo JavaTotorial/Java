@@ -1,12 +1,13 @@
 package com.pcschool.ocp.d10.case5;
 
-public class Drink {
-	private int price;
+public class Drink implements Comparable<Drink> {
 	private String name;
-	
-	public Drink(int price, String name) {
-		this.price = price;
+	private int price;
+
+	public Drink(String name, int price) {
+		super();
 		this.name = name;
+		this.price = price;
 	}
 
 	public int getPrice() {
@@ -55,6 +56,12 @@ public class Drink {
 
 	@Override
 	public String toString() {
-		return "Drink [price=" + price + ", name=" + name + "]";
+		return "Drink [name=" + name + ", price=" + price + "]";
 	}
+
+	@Override
+	public int compareTo(Drink o) {
+		return price - o.price;
+	}
+
 }

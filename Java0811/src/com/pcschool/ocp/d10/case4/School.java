@@ -9,7 +9,7 @@ import java.util.stream.Collectors;
 public class School {
 	public static void main(String[] args) {
 		Student s1 = new Student("John");
-		s1.addScore(80, 90, 90, 70);
+		s1.addScore(80).addScore(90).addScore(90).addScore(70);
 
 		Set<Exam> exams = new LinkedHashSet<>();
 		exams.add(new Exam(90));
@@ -30,7 +30,7 @@ public class School {
 		// @formatter:off
 		// 所有人的最高分求平均
 		double avg = students.parallelStream()
-								.mapToInt(s -> s.getScores()
+								.mapToInt(s -> s.getExams()
 												.parallelStream()
 												.mapToInt(Exam::getScore)
 												.summaryStatistics()
@@ -41,7 +41,7 @@ public class School {
 		
 		// 取出最高分
 		ArrayList<Integer> maxes = students.parallelStream()
-				.mapToInt(s -> s.getScores()
+				.mapToInt(s -> s.getExams()
 				.parallelStream()
 				.mapToInt(Exam::getScore)
 				.summaryStatistics()
