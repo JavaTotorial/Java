@@ -1,5 +1,6 @@
 package com.pcschool.ocp.d10.case4;
 
+import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -28,9 +29,8 @@ public class Student {
 		return scores;
 	}
 
-	public Student addScore(int score) {
-		scores.add(new Exam(score));
-		return this;
+	public void addScore(int... score) {
+		Arrays.stream(score).forEach(s -> scores.add(new Exam(s)));
 	}
 
 	@Override
