@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case6;
+package com.pcschool.ocp.finish.d10.case6;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case5;
+package com.pcschool.ocp.finish.d10.case5;
 
 public class Drink implements Comparable<Drink> {
 	private String name;

@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case3;
+package com.pcschool.ocp.finish.d10.case3;
 
 import java.util.Iterator;
 import java.util.LinkedHashSet;

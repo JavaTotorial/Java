@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case2;
+package com.pcschool.ocp.finish.d10.case2;
 
 public class NoteCollection {
 	public static void main(String[] args) {

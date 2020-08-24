@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case1;
+package com.pcschool.ocp.finish.d10.case1;
 
 public class Note {
 	private int data;

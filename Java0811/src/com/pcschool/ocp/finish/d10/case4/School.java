@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d10.case4;
+package com.pcschool.ocp.finish.d10.case4;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;
