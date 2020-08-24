@@ -1,6 +1,6 @@
 package com.pcschool.ocp.d11.case1;
 
-public class Level {
+public class Level implements Comparable<Level> {
 	private int score;
 	private String name;
 	
@@ -14,7 +14,7 @@ public class Level {
 
 	@Override
 	public String toString() {
-		return "Level [score=" + score + ", name=" + name + "]";
+		return "Level {score=" + score + ", name=" + name + "}";
 	}
 
 	public int getScore() {
@@ -31,5 +31,10 @@ public class Level {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	@Override
+	public int compareTo(Level o) {
+		return o.score - score;
 	}
 }
