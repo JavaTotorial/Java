@@ -12,8 +12,8 @@ public class ThreadDemo {
 		Runnable w2 = () -> System.out.println(r.nextInt(10) + 10);
 		// 20 ~ 29 取亂數
 		Runnable w3 = () -> System.out.println(r.nextInt(10) + 20);
-		// 30 ~ 39 取亂數
 		Runnable w4 = () -> System.out.println(r.nextInt(10) + 30);
+		// 30 ~ 39 取亂數
 		
 		Runnable[] rs = {w1, w2, w3, w4};
 		
