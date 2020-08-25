@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d12_exception.case4;
+package com.pcschool.ocp.finish.d12_exception.case4;
 
 public class UnCheckedAndChecked {
 	public static void main(String[] args) {

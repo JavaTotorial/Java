@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d12_exception.case3;
+package com.pcschool.ocp.finish.d12_exception.case3;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

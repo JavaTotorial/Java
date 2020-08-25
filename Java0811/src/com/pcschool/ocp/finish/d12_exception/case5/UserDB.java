@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d12_exception.case5;
+package com.pcschool.ocp.finish.d12_exception.case5;
 
 import java.util.Arrays;
 import java.util.List;
