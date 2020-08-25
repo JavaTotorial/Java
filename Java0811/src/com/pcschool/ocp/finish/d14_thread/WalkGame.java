@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d14_thread;
+package com.pcschool.ocp.finish.d14_thread;
 
 public class WalkGame {
 	public static void main(String[] args) {
