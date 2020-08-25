@@ -1,12 +1,7 @@
 package com.pcschool.ocp.d14_thread;
 
-public class Race extends Thread {
-	
+public class Walk implements Runnable {
 	private static boolean gameover = false;
-
-	public Race(String name) {
-		super(name);
-	}
 
 	@Override
 	public void run() {
