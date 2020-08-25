@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d13_assertion;
+package com.pcschool.ocp.finish.d13_assertion;
 
 public class MyObject {
 	public MyObject() {

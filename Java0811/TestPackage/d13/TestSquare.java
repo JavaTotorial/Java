@@ -3,7 +3,7 @@ package d13;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.pcschool.ocp.d13_assertion.Square;
+import com.pcschool.ocp.finish.d13_assertion.Square;
 
 public class TestSquare {
 
