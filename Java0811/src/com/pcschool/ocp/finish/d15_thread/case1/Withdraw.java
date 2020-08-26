@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d15_thread.case1;
+package com.pcschool.ocp.finish.d15_thread.case1;
 
 public class Withdraw implements Runnable {
 	private Account account;

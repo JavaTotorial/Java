@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d15_thread.case1;
+package com.pcschool.ocp.finish.d15_thread.case1;
 
 public class Account {
 	private int balance; // 執行緒共享
