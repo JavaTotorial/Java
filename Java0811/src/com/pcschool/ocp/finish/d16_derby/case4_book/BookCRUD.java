@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d16_derby.case4_book;
+package com.pcschool.ocp.finish.d16_derby.case4_book;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
