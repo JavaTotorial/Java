@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d17_io.case5;
+package com.pcschool.ocp.finish.d17_io.case5;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

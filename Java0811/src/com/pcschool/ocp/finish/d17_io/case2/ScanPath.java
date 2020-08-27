@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d17_io.case2;
+package com.pcschool.ocp.finish.d17_io.case2;
 
 import java.io.File;
 

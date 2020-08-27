@@ -1,4 +1,4 @@
-package com.pcschool.ocp.d17_io.case4;
+package com.pcschool.ocp.finish.d17_io.case4;
 
 import java.io.File;
 import java.io.FileOutputStream;
