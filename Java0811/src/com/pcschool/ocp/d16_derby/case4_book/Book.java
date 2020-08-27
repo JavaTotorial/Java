@@ -54,7 +54,7 @@ public class Book {
 
 	@Override
 	public String toString() {
-		return "Book [id=" + id + ", bname=" + bname + ", price=" + price + ", ts=" + ts + "]";
+		return "Book [id=" + id + ", 書名=" + bname + ", 價格=" + price + ", 日期=" + ts + "]";
 	}
 
 }

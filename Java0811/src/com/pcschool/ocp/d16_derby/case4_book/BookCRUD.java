@@ -59,7 +59,7 @@ public class BookCRUD {
 
 	// 修改單筆
 	public boolean updateBook(Book book) {
-		String sql = "UPDATA book SET bname = ?, price = ? WHERE id = ?)";
+		String sql = "UPDATE book SET bname = ?, price = ? WHERE id = ?";
 		try (PreparedStatement pstat = conn.prepareStatement(sql)) {
 			pstat.setString(1, book.getBname());
 			pstat.setInt(2, book.getPrice());
@@ -73,7 +73,7 @@ public class BookCRUD {
 
 	// 刪除單筆
 	public boolean deleteBook(int id) {
-		String sql = "DELETE FROM book WHERE id = ?)";
+		String sql = "DELETE FROM book WHERE id = ?";
 		try (PreparedStatement pstat = conn.prepareStatement(sql)) {
 			pstat.setInt(1, id);
 			int rowcount = pstat.executeUpdate();
